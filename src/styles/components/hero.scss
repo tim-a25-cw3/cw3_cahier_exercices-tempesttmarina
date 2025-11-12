@@ -9,6 +9,11 @@
     @media (width <= $breakpoint-md) {
         height: 60vh;
     }
+
+    h1 {
+        font-family: var(--font-secondary);
+        font-weight: 800;
+    }
 }
 
 .hero__media {

@@ -10,7 +10,7 @@ h5,
 h6 {
     font-family: var(--font-primary);
     line-height: 1;
-    font-weight: bold;
+    font-weight: 300;
 }
 
 h1 {
@@ -21,11 +21,11 @@ h1 {
 
 h2 {
     font-size: var(--font-size-h2);
-    font-family: var(--font-secondary);
 }
 
 h3 {
     font-size: var(--font-size-h3);
+    font-weight: 600;
 }
 
 h4 {
@@ -38,4 +38,15 @@ h5 {
 
 h6 {
     font-size: var(--font-size-h6);
+}
+strong {
+    font-weight: 600;
+    color: var(--color-white);
+}
+p {
+    color: var(--color-content);
+}
+.tag {
+    font-size: var(--font-size-tag);
+    color: var(--color-white);
 }

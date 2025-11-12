@@ -1,4 +1,5 @@
 .cards {
+    margin-top: 100px;
     @media (width <= $breakpoint-md) {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -8,6 +9,9 @@
         display: block;
         gap: var(--spacing-md);
     }
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
 }
 .card {
     display: grid;
@@ -39,4 +43,7 @@
         object-fit: cover;
         display: block;
     }
+}
+img {
+    border-radius: 16px;
 }
