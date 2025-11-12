@@ -1,0 +1,42 @@
+.cards {
+    @media (width <= $breakpoint-md) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--spacing-md);
+    }
+    @media (width <= $breakpoint-sm) {
+        display: block;
+        gap: var(--spacing-md);
+    }
+}
+.card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-md);
+    align-items: center;
+
+    &:nth-child(even) {
+        .card__content {
+            order: -1;
+        }
+    }
+
+    @media (width <= $breakpoint-md) {
+        display: block;
+        &:nth-child(even) {
+            .card__content {
+                order: unset;
+            }
+        }
+    }
+}
+
+.card__media {
+    aspect-ratio: 1475/690;
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        display: block;
+    }
+}
