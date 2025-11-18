@@ -1,0 +1,29 @@
+.carrousel {
+    background-color: var(--color-primary);
+    color: var(--color-black);
+    h2 {
+        margin-bottom: var(--spacing-xl);
+    }
+    .btn {
+        background-color: var(--color-white);
+    }
+    strong,
+    p {
+        color: var(--color-black);
+    }
+    .swiper-wrapper {
+        margin-bottom: var(--spacing-lg);
+    }
+    .swiper-pagination {
+        position: static;
+        --swiper-pagination-color: var(--color-white);
+        --swiper-pagination-bullet-border-radius: 0;
+        --swiper-pagination-bullet-width: 20px;
+        --swiper-pagination-bullet-height: 20px;
+        --swiper-pagination-gap: 20px;
+    }
+
+    .swiper-pagination-bullet {
+        transform: rotate(45deg);
+    }
+}
