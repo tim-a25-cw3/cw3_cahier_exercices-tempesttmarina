@@ -6,8 +6,9 @@
     font-weight: 800;
     border-radius: 100px;
     text-transform: uppercase;
-    display: flex;
-    align-items: center;
+    .icon {
+        align-self: center;
+    }
     &:hover {
         color: var(--color-black);
     }
